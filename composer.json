@@ -1,0 +1,39 @@
+{
+    "name": "laravelpackages/laravel-location",
+    "description": "Location pack for laravel framework",
+    "keywords": [
+        "location",
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Rafael Zingano",
+            "email": "laravelpackages@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "^6",
+        "laravelpackages/laravel-select2": "dev-master",
+        "laravelpackages/laravel-vendor": "dev-master",
+        "laravelcollective/html": "^6.0",
+        "yajra/laravel-datatables": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelPackages\\Location\\": "src/",
+            "LaravelPackages\\Location\\Databases\\Seeds\\": "src/Databases/Seeds/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelPackages\\Location\\Providers\\LocationServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
